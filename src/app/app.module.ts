@@ -1,17 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-// added for native bootstrap support
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 
 // PrimeNG UI modules
 import { ButtonModule } from 'primeng/button';
 
+// components
+import { AppComponent } from './app.component';
+import { NotesListComponentComponent } from './notes-list-component/notes-list-component.component';
+import { NoteDetailComponentComponent } from './note-detail-component/note-detail-component.component';
+import { LoginComponentComponent } from './login-component/login-component.component';
+import { SignupComponentComponent } from './signup-component/signup-component.component';
+import { HeaderComponentComponent } from './header-component/header-component.component';
+
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    NotesListComponentComponent,
+    NoteDetailComponentComponent,
+    LoginComponentComponent,
+    SignupComponentComponent,
+    HeaderComponentComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, ButtonModule],
   providers: [],
   bootstrap: [AppComponent],
