@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 
 // PrimeNG UI modules
 import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
 
 // components
 import { AppComponent } from './app.component';
@@ -24,7 +26,14 @@ import { HeaderComponentComponent } from './header-component/header-component.co
     SignupComponentComponent,
     HeaderComponentComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, ButtonModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    ButtonModule,
+    InputTextModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

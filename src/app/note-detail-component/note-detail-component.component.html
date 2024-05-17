@@ -1,1 +1,14 @@
-<p>note-detail-component works!</p>
+<hr />
+
+<div class="flex justify-content-center">
+  <input
+    id="p-inputtext"
+    class="p-inputtext-lg h3 w-100"
+    type="text"
+    pInputText
+    [(ngModel)]="note.title"
+    required
+  />
+</div>
+<!-- this is where the editor is injected -->
+<div id="editor"></div>
