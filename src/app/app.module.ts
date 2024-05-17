@@ -7,9 +7,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// PrimeNG UI modules
+import { ButtonModule } from 'primeng/button';
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, ButtonModule],
   providers: [],
   bootstrap: [AppComponent],
 })
