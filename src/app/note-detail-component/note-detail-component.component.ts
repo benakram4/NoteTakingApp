@@ -35,5 +35,6 @@ export class NoteDetailComponentComponent implements OnInit {
 
   handleTextChange(textValue: string): void {
     console.log('Text changed:', textValue);
+    this.content = textValue;
   }
 }
