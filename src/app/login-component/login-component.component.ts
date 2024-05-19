@@ -13,7 +13,7 @@ export class LoginComponentComponent {
 
   error: string = '';
   isLoading = false;
-  authSub!: Subscription;
+  authSub?: Subscription;
 
   constructor(private authService: AuthServiceService, private router: Router) { }
   
@@ -42,6 +42,8 @@ export class LoginComponentComponent {
   } 
 
   ngOnDestroy() {
-    this.authSub.unsubscribe();
+    if(this.authSub){
+      this.authSub.unsubscribe();
+    }
   }
 }
